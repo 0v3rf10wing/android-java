@@ -1,16 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
+    <Button
+        android:id="@+id/notification_sound"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:showIn="@layout/list_item"
-        tools:itemCount="10"/>
+        android:layout_height="wrap_content"
+        android:onClick="notificationSound"
+        android:text="Notification Sound" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/ringtone_sound"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ringtoneSound"
+        android:text="Ringtone Sound" />
+
+    <Button
+        android:id="@+id/alarm_sound"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="alarmSound"
+        android:text="Alarm Sound" />
+
+    <Button
+        android:id="@+id/all_sound"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="allSound"
+        android:text="Type All" />
+
+</LinearLayout>

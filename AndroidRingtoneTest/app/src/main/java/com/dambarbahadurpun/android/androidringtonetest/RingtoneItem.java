@@ -1,6 +1,8 @@
 package com.dambarbahadurpun.android.androidringtonetest;
 
-public class RingtoneItem {
+import java.io.Serializable;
+
+public class RingtoneItem implements Serializable {
 
     private String title;
     private String uri;
