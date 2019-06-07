@@ -1,17 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/world_clock_menu"
+            app:popupTheme="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+            app:title="@string/world_clock"
+            app:titleTextColor="@color/colorOnPrimary" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight=".8"/>
+        android:layout_weight=".9" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        app:tabBackground="@color/colorPrimary"
+        app:tabIndicatorColor="@android:color/transparent"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabSelectedTextColor="@color/colorNavigationActive"
+        app:tabTextAppearance="@style/AppTheme.TabText"
+        app:tabTextColor="@color/colorNavigationInactive">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_item_world_clock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_world_clock_inactive"
+            android:text="@string/world_clock" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_item_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_alarm_inactive"
+            android:text="@string/alarm" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_item_stop_watch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_stopwatch_inactive"
+            android:text="@string/stop_watch" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_item_timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_timer_inactive"
+            android:text="@string/timer" />
+    </com.google.android.material.tabs.TabLayout>
 
 
 </LinearLayout>
