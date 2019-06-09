@@ -13,5 +13,32 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="AppTheme.TimeTextAppearance" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="android:textSize">42sp</item>
+    </style>
+
+    <style name="AppTheme.MeridiemTextAppearance" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/colorOnPrimary</item>
+    </style>
+
+    <style name="AppTheme.PlaceNameTextAppearance.Large" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/colorOnPrimary</item>
+    </style>
+
+    <style name="AppTheme.PlaceNameTextAppearance.Medium" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/colorOnPrimary</item>
+    </style>
+
+    <style name="AppTheme.PlaceNameTextAppearance.Small" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/colorOnPrimary</item>
+    </style>
+
+    <style name="AppTheme.TimeDifferenceTextAppearance" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/colorOnTimeDifference</item>
+    </style>
+
+
+
 
 </resources>
