@@ -12,5 +12,4 @@
         android:layout_height="wrap_content"
         tools:itemCount="6"
         tools:listitem="@layout/single_alarm" />
-
 </LinearLayout>
