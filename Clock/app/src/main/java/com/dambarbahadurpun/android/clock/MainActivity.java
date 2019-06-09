@@ -44,20 +44,15 @@ public class MainActivity extends AppCompatActivity {
         mStopWatchFragment = new StopWatchFragment();
         mTimerFragment = new TimerFragment();
         mFragmentManager = getSupportFragmentManager();
-        /*
+        mFragmentTransaction = mFragmentManager.beginTransaction();
+
         mFragmentTransaction.add(R.id.main_container, mTimerFragment, "3").hide(mTimerFragment);
         mFragmentTransaction.add(R.id.main_container, mStopWatchFragment, "2").hide(mStopWatchFragment);
         mFragmentTransaction.add(R.id.main_container, mAlarmFragment, "1").hide(mAlarmFragment);
-        mFragmentTransaction.add(R.id.main_container, mWorldClockFragment, "0");
-        */
-
-
-        mFragmentManager.beginTransaction().add(mMainContainer.getId(), mTimerFragment, "3").hide(mTimerFragment).commit();
-        mFragmentManager.beginTransaction().add(mMainContainer.getId(), mStopWatchFragment, "2").hide(mStopWatchFragment).commit();
-        mFragmentManager.beginTransaction().add(mMainContainer.getId(), mAlarmFragment, "1").hide(mAlarmFragment).commit();
-        mFragmentManager.beginTransaction().add(mMainContainer.getId(), mWorldClockFragment, "0").commit();
+        mFragmentTransaction.add(R.id.main_container, mWorldClockFragment, "0").commit();
         mActiveFragment = mWorldClockFragment;
 
+        /*mFragmentManager.beginTransaction().add(mMainContainer.getId(), mTimerFragment, "3").hide(mTimerFragment).commit();*/
         mBottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
     }
 

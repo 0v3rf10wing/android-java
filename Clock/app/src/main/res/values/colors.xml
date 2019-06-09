@@ -7,4 +7,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="colorNavigationActive">#FF9500</color>
     <color name="colorNavigationInactive">#808080</color>
+    <color name="colorLineSeparator">#333333</color>
 </resources>
