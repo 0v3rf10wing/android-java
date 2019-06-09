@@ -8,37 +8,40 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="AppTheme.TabText" parent="TextAppearance.AppCompat.Small">
+    <style name="TextAppearance.AppTheme.Tab" parent="TextAppearance.AppCompat.Small">
         <item name="android:textSize">12sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="AppTheme.TimeTextAppearance" parent="TextAppearance.AppCompat.Large">
+    <style name="TextAppearance.AppTheme.Time" parent="TextAppearance.AppCompat.Large">
         <item name="android:textColor">@color/colorOnPrimary</item>
-        <item name="android:textSize">42sp</item>
+        <item name="android:textSize">50sp</item>
     </style>
 
-    <style name="AppTheme.MeridiemTextAppearance" parent="TextAppearance.AppCompat.Large">
-        <item name="android:textColor">@color/colorOnPrimary</item>
-    </style>
-
-    <style name="AppTheme.PlaceNameTextAppearance.Large" parent="TextAppearance.AppCompat.Large">
+    <style name="TextAppearance.AppTheme.Meridiem" parent="TextAppearance.AppCompat.Large">
         <item name="android:textColor">@color/colorOnPrimary</item>
     </style>
 
-    <style name="AppTheme.PlaceNameTextAppearance.Medium" parent="TextAppearance.AppCompat.Medium">
+    <style name="TextAppearance.Large.AppTheme.PlaceName" parent="TextAppearance.AppCompat.Large">
         <item name="android:textColor">@color/colorOnPrimary</item>
     </style>
 
-    <style name="AppTheme.PlaceNameTextAppearance.Small" parent="TextAppearance.AppCompat.Small">
+    <style name="TextAppearance.Medium.AppTheme.PlaceName" parent="TextAppearance.AppCompat.Medium">
         <item name="android:textColor">@color/colorOnPrimary</item>
     </style>
 
-    <style name="AppTheme.TimeDifferenceTextAppearance" parent="TextAppearance.AppCompat.Medium">
+    <style name="TextAppearance.Small.AppTheme.PlaceName" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/colorOnPrimary</item>
+    </style>
+
+    <style name="TextAppearance.AppTheme.TimeDifference" parent="TextAppearance.AppCompat.Medium">
         <item name="android:textColor">@color/colorOnTimeDifference</item>
     </style>
 
-
+    <style name="TextAppearance.AppTheme.AlarmInfo" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/colorOnPrimary</item>
+    </style>
 
 
 </resources>

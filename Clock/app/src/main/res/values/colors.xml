@@ -9,4 +9,5 @@
     <color name="colorNavigationInactive">#808080</color>
     <color name="colorLineSeparator">#333333</color>
     <color name="colorOnTimeDifference">#8E8E93</color>
+    <color name="colorOnPrimaryDisabled">#8E8E93</color>
 </resources>

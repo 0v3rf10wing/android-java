@@ -1,14 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/colorPrimary">
+    android:layout_height="wrap_content">
 
-    <TextView
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:text="Alarm Name" />
+        android:layout_height="@dimen/card_view_height"
+        android:padding="@dimen/activity_padding"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_alarm_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textAppearance="@style/TextAppearance.AppTheme.AlarmInfo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_time"
+                tools:text="Alarm Info" />
+
+            <Switch
+                android:id="@+id/switch_alarm_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:checked="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppTheme.Time"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="6:30" />
+
+            <TextView
+                android:id="@+id/tv_meridiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:paddingStart="0dp"
+                android:paddingEnd="@dimen/activity_padding"
+                android:textAppearance="@style/TextAppearance.AppTheme.Meridiem"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_time"
+                app:layout_constraintStart_toEndOf="@+id/tv_time"
+                tools:text="AM" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

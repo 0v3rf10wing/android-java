@@ -3,17 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/colorPrimary">
+    android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view_container"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="@dimen/card_view_height"
+        android:padding="@dimen/activity_padding"
         app:cardBackgroundColor="@color/colorPrimary"
         app:cardElevation="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,7 +20,6 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintTop_toTopOf="parent">
@@ -35,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:textAppearance="@style/AppTheme.TimeDifferenceTextAppearance"
+                android:textAppearance="@style/TextAppearance.AppTheme.TimeDifference"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="Time Difference" />
@@ -46,7 +41,7 @@
                 android:layout_height="33dp"
                 android:layout_marginStart="16dp"
                 android:gravity="center_vertical"
-                android:textAppearance="@style/AppTheme.PlaceNameTextAppearance.Large"
+                android:textAppearance="@style/TextAppearance.Large.AppTheme.PlaceName"
                 app:layout_constraintBaseline_toBaselineOf="@+id/tv_time"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:text="Place Name" />
@@ -59,7 +54,7 @@
                 android:layout_marginEnd="4dp"
                 android:layout_marginBottom="8dp"
                 android:gravity="center"
-                android:textAppearance="@style/AppTheme.TimeTextAppearance"
+                android:textAppearance="@style/TextAppearance.AppTheme.Time"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/tv_meridiem"
                 app:layout_constraintTop_toTopOf="parent"
@@ -73,7 +68,7 @@
                 android:gravity="center"
                 android:paddingStart="0dp"
                 android:paddingEnd="@dimen/activity_padding"
-                android:textAppearance="@style/AppTheme.MeridiemTextAppearance"
+                android:textAppearance="@style/TextAppearance.AppTheme.Meridiem"
                 app:layout_constraintBaseline_toBaselineOf="@+id/tv_time"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:text="AM" />
