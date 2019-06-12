@@ -30,10 +30,11 @@ public class StopWatchFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         Log.d(TAG, "onCreateView: ");
         View view = inflater.inflate(R.layout.fragment_stop_watch, container, false);
-        mTvTime = view.findViewById(R.id.btn_reset);
+        mTvTime = view.findViewById(R.id.tv_time);
         mBtnLap = view.findViewById(R.id.btn_lap);
         mBtnStart = view.findViewById(R.id.btn_start);
         mBtnStop = view.findViewById(R.id.btn_stop);
+        mBtnReset = view.findViewById(R.id.btn_reset);
 
         //Button reset and button lap are in the same position(Overlapping). Similarly button start and button stop are also in the same position(Overlapping),
         //hiding reset and stop button at the beginning
@@ -41,7 +42,6 @@ public class StopWatchFragment extends Fragment {
         mBtnReset.setVisibility(View.INVISIBLE);
 
         //setting on click listener
-
         mBtnStart.setOnClickListener(startOnClickListener);
         mBtnStop.setOnClickListener(stopOnClickListener);
         mBtnReset.setOnClickListener(resetOnClickListener);
