@@ -10,4 +10,25 @@
     <color name="colorLineSeparator">#333333</color>
     <color name="colorOnTimeDifference">#8E8E93</color>
     <color name="colorOnPrimaryDisabled">#8E8E93</color>
+
+    <!--for start stop lap reset button-->
+    <color name="colorStartPrimary">#1A361E</color>
+    <color name="colorStartSecondary">#0D0D0D</color>
+    <color name="colorOnStartPrimary">#4CD964</color>
+
+    <color name="colorStopPrimary">#3D1614</color>
+    <color name="colorStopSecondary">#0D0D0D</color>
+    <color name="colorOnStopPrimary">#FF3B30</color>
+
+    <color name="colorResetPrimary">#3D3D3D</color>
+    <color name="colorResetSecondary">#0D0D0D</color>
+    <color name="colorOnResetPrimary">#FFFFFF</color>
+
+    <color name="colorLapPrimaryEnabled">#3D3D3D</color>
+    <color name="colorLapSecondaryEnabled">#0D0D0D</color>
+    <color name="colorOnLapPrimaryEnabled">#FFFFFF</color>
+
+    <color name="colorLapPrimaryDisabled">#151515</color>
+    <color name="colorLapSecondaryDisabled">#0D0D0D</color>
+    <color name="colorOnLapPrimaryDisabled">#8E8E93</color>
 </resources>

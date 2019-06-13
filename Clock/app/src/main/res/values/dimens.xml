@@ -3,4 +3,10 @@
     <dimen name="activity_padding">16dp</dimen>
     <dimen name="activity_margin">16dp</dimen>
     <dimen name="card_view_height">105dp</dimen>
+
+    //for start stop lap reset button
+    <dimen name="button_width">100dp</dimen>
+    <dimen name="button_height">100dp</dimen>
+    <dimen name="outer_width">2dp</dimen>
+    <dimen name="inner_width">4dp</dimen>
 </resources>
