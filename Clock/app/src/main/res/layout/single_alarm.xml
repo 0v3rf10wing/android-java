@@ -28,7 +28,7 @@
                 android:layout_marginStart="16dp"
                 android:textAppearance="@style/TextAppearance.AppTheme.AlarmInfo"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_time"
+                app:layout_constraintTop_toBottomOf="@+id/chronometer"
                 tools:text="Alarm Info" />
 
             <Switch
@@ -44,7 +44,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/tv_time"
+                android:id="@+id/chronometer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -64,8 +64,8 @@
                 android:paddingStart="0dp"
                 android:paddingEnd="@dimen/activity_padding"
                 android:textAppearance="@style/TextAppearance.AppTheme.Meridiem"
-                app:layout_constraintBaseline_toBaselineOf="@+id/tv_time"
-                app:layout_constraintStart_toEndOf="@+id/tv_time"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chronometer"
+                app:layout_constraintStart_toEndOf="@+id/chronometer"
                 tools:text="AM" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

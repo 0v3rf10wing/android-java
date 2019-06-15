@@ -42,12 +42,12 @@
                 android:layout_marginStart="16dp"
                 android:gravity="center_vertical"
                 android:textAppearance="@style/TextAppearance.Large.AppTheme.PlaceName"
-                app:layout_constraintBaseline_toBaselineOf="@+id/tv_time"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chronometer"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:text="Place Name" />
 
             <TextView
-                android:id="@+id/tv_time"
+                android:id="@+id/chronometer"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="8dp"
@@ -69,7 +69,7 @@
                 android:paddingStart="0dp"
                 android:paddingEnd="@dimen/activity_padding"
                 android:textAppearance="@style/TextAppearance.AppTheme.Meridiem"
-                app:layout_constraintBaseline_toBaselineOf="@+id/tv_time"
+                app:layout_constraintBaseline_toBaselineOf="@+id/chronometer"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:text="AM" />
         </androidx.constraintlayout.widget.ConstraintLayout>

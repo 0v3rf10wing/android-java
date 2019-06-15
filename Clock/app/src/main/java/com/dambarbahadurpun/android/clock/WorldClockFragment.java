@@ -32,7 +32,7 @@ public class WorldClockFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_world_clock, container, false);
         mCardViewContainer = view.findViewById(R.id.card_view_container);
         mTvTimeDifference = view.findViewById(R.id.tv_time_difference);
-        mTvTime = view.findViewById(R.id.tv_time);
+        mTvTime = view.findViewById(R.id.chronometer);
         mTvPlaceName = view.findViewById(R.id.tv_place_name);
         mTvMeridiem = view.findViewById(R.id.tv_meridiem);
         return view;
