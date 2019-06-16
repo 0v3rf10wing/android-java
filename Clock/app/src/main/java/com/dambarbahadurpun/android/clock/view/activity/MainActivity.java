@@ -1,4 +1,4 @@
-package com.dambarbahadurpun.android.clock;
+package com.dambarbahadurpun.android.clock.view.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +12,11 @@ import android.view.MenuItem;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.dambarbahadurpun.android.clock.R;
+import com.dambarbahadurpun.android.clock.view.fragment.AlarmFragment;
+import com.dambarbahadurpun.android.clock.view.fragment.StopWatchFragment;
+import com.dambarbahadurpun.android.clock.view.fragment.TimerFragment;
+import com.dambarbahadurpun.android.clock.view.fragment.WorldClockFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {

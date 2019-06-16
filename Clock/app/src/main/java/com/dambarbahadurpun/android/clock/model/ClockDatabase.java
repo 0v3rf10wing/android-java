@@ -1,4 +1,4 @@
-package com.dambarbahadurpun.android.clock;
+package com.dambarbahadurpun.android.clock.model;
 
 import android.content.Context;
 
@@ -9,6 +9,7 @@ import androidx.room.RoomDatabase;
 /**
  * Created by Dambar Bahadur Pun on 2019-06-15.
  */
+
 @Database(entities = Lap.class, version = 1, exportSchema = false)
 public abstract class ClockDatabase extends RoomDatabase {
 

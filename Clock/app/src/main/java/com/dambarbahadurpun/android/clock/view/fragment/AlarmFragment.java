@@ -1,4 +1,4 @@
-package com.dambarbahadurpun.android.clock;
+package com.dambarbahadurpun.android.clock.view.fragment;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -10,8 +10,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class TimerFragment extends Fragment {
-    private static final String TAG = "TimerFragment";
+import com.dambarbahadurpun.android.clock.R;
+
+public class AlarmFragment extends Fragment {
+    private static final String TAG = "AlarmFragment";
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +22,6 @@ public class TimerFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        Log.d(TAG, "onCreateView: ");
-        return inflater.inflate(R.layout.fragment_timer, container, false);
+        return inflater.inflate(R.layout.fragment_alarm, container, false);
     }
 }

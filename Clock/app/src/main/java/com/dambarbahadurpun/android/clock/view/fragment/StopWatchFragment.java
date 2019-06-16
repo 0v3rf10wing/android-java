@@ -1,4 +1,4 @@
-package com.dambarbahadurpun.android.clock;
+package com.dambarbahadurpun.android.clock.view.fragment;
 
 import android.os.Bundle;
 import android.os.SystemClock;
@@ -12,6 +12,8 @@ import android.widget.Chronometer;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.dambarbahadurpun.android.clock.R;
 
 public class StopWatchFragment extends Fragment {
     private static final String TAG = "StopWatchFragment";
@@ -78,7 +80,6 @@ public class StopWatchFragment extends Fragment {
             mBtnStart.setVisibility(View.VISIBLE);
             mBtnLap.setVisibility(View.INVISIBLE);
             mBtnReset.setVisibility(View.VISIBLE);
-
         }
     };
 

@@ -1,4 +1,4 @@
-package com.dambarbahadurpun.android.clock;
+package com.dambarbahadurpun.android.clock.view.fragment;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+
+import com.dambarbahadurpun.android.clock.R;
 
 public class WorldClockFragment extends Fragment {
     private static final String TAG = "WorldClockFragment";

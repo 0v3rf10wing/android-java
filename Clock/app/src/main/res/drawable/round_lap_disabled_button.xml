@@ -7,20 +7,20 @@
         </shape>
     </item>
     <item
-        android:bottom="@dimen/outer_width"
-        android:left="@dimen/outer_width"
-        android:right="@dimen/outer_width"
-        android:top="@dimen/outer_width">
+        android:bottom="@dimen/button_outer_width"
+        android:left="@dimen/button_outer_width"
+        android:right="@dimen/button_outer_width"
+        android:top="@dimen/button_outer_width">
         <shape android:shape="rectangle">
             <corners android:radius="100dp" />
             <solid android:color="@color/colorLapSecondaryDisabled" />
         </shape>
     </item>
     <item
-        android:bottom="@dimen/inner_width"
-        android:left="@dimen/inner_width"
-        android:right="@dimen/inner_width"
-        android:top="@dimen/inner_width">
+        android:bottom="@dimen/button_inner_width"
+        android:left="@dimen/button_inner_width"
+        android:right="@dimen/button_inner_width"
+        android:top="@dimen/button_inner_width">
         <shape android:shape="rectangle">
             <corners android:radius="100dp" />
             <solid android:color="@color/colorLapPrimaryDisabled" />

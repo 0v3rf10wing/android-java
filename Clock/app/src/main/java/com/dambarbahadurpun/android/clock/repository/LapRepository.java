@@ -1,9 +1,13 @@
-package com.dambarbahadurpun.android.clock;
+package com.dambarbahadurpun.android.clock.repository;
 
 import android.app.Application;
 import android.os.AsyncTask;
 
 import androidx.lifecycle.LiveData;
+
+import com.dambarbahadurpun.android.clock.model.ClockDatabase;
+import com.dambarbahadurpun.android.clock.model.Lap;
+import com.dambarbahadurpun.android.clock.model.LapDao;
 
 import java.util.List;
 
@@ -34,7 +38,6 @@ public class LapRepository {
 
     public void deleteAllLaps() {
         new DeleteAllLapsAsyncTask(lapDao).execute();
-
     }
 
     public LiveData<List<Lap>> getAllLaps() {
